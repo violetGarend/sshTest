@@ -53,13 +53,13 @@
       }, 100)
     },
     methods: {
-		  /**
+      /**
        * 定时器操作
        */
       startTimer: function () {
-		    this.playTimer = window.setInterval(() => {
-		      this.currentIndex++;
-		      this.scrollContent(-this.currentIndex * this.totalWidth);
+        this.playTimer = window.setInterval(() => {
+          this.currentIndex++;
+          this.scrollContent(-this.currentIndex * this.totalWidth);
         }, this.interval)
       },
       stopTimer: function () {

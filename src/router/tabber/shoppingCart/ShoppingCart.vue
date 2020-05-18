@@ -1,12 +1,19 @@
 <template>
   <div>
-    <h1>购物车</h1>
+    <mains></mains>
+<!--    <cart></cart>-->
   </div>
 </template>
 
 <script>
+  import mains from "views/shoppingTrolley/stMain";
+// import Cart from "views/cart/Cart";
   export default {
-    name: "ShoppingCart"
+    name: "ShoppingCart",
+    components: {
+      mains,
+      // Cart
+    }
   }
 </script>
 

@@ -25,6 +25,7 @@
     methods:{
       changeIndex(index){
         this.controlIndex = index;
+        this.$emit('activeIndex',index)
       }
     }
   }

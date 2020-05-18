@@ -9,6 +9,7 @@ import Home from "./tabber/home/Home";
 const Classify = () => import('./tabber/classify/Classify')
 const ShoppingCart = () => import('./tabber/shoppingCart/ShoppingCart')
 const Mine = () => import('./tabber/mine/Mine')
+const EveryGoods = () => import('./goods/EveryGoods')
 
 const routes = [
   {
@@ -31,8 +32,15 @@ const routes = [
     path: '/profile',
     component: Mine
   },
+  {
+    path:'/details/:id',
+    component:EveryGoods
+  },
 ]
-
+const originalPush = VueRouter.prototype.replace
+VueRouter.prototype.replace = function replace(location) {
+  return originalPush.call(this, location).catch(err => err)
+}
 const router = new VueRouter({
   routes,
   mode:'history'

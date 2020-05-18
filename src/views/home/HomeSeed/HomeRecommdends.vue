@@ -27,21 +27,24 @@
 </script>
 
 <style scoped>
-  .recommdend{
-  display: flex;
+  .recommdend {
+    display: flex;
     /*width: 100%;*/
     text-align: center;
     padding: 10px 0 20px 0;
     border-bottom: #eeeeee 5px solid;
   }
-  .recomdend-item{
+
+  .recomdend-item {
     flex: 1;
   }
-  .recomdend-item a img{
+
+  .recomdend-item a img {
     height: 70px;
     width: 70px;
   }
-  .recomdend-item div{
+
+  .recomdend-item div {
     margin-top: 10px;
     font-size: 15px;
   }
